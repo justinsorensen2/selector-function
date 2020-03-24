@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Header from './components/Header'
 import Display from './components/Display'
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Page from './pages/Page'
 import Page2 from './pages/Page2'
 import HomePage from './pages/HomePage'
@@ -11,7 +11,7 @@ const App = () => {
   const [hue, setHue] = useState(Math.round(Math.random() * 360))
   const [saturation, setSaturation] = useState(Math.round(Math.random() * 100))
   const [lightness, setLightness] = useState(Math.round(Math.random() * 100))
-  const [alpha, setAlpha] = useState(Math.round(Math.random() * 100))
+  const [alpha, setAlpha] = useState(Math.random())
 
   const hueTracker = (e) => {
     const h = e.target.value
